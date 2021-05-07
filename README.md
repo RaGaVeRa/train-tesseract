@@ -22,6 +22,12 @@ $ docker run -it -v $PWD:/app --name train-tesseract train-tesseract /bin/bash
 # cp -a /app/data/ground-truth/* /app/src/tesstrain/data/kn2-ground-truth/.
 ```
 
+## Copy Tesseract's pretrained+retrainable Kannada model
+```
+# cd /usr/local/share/tessdata
+# wget -O kan.traineddata https://github.com/tesseract-ocr/tessdata_best/blob/master/kan.traineddata?raw=true
+```
+
 ## Train
 ```
 # cd /app/src/tesstrain/
